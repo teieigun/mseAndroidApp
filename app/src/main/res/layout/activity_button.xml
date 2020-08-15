@@ -13,15 +13,15 @@
         android:textColor="#FFFFFF"
         android:background="#0051CC"
         />
+
     <Button
         android:id="@+id/button02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="按钮2"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/bg_button02"
-        android:layout_marginTop="5dp"
         android:layout_below="@id/button01"
-        />
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_button02"
+        android:text="按钮2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 </RelativeLayout>
