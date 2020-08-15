@@ -4,9 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!--
+   Button 继承了textView以此可以点击，几乎任何组件都继承了TextView，所有几乎所有的组件都具有点击事件
 
 
+    <Button
+        android:id="@+id/button01"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        />
 
+    <Button
+        android:id="@+id/button02"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Button"
+        />
+-->
 </LinearLayout>
