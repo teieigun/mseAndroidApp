@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:text="按钮1"
         android:textSize="20sp"
+        android:layout_marginTop="100dp"
         android:textColor="#FFFFFF"
         android:background="#0051CC"
         />
@@ -19,9 +20,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/button01"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="63dp"
         android:background="@drawable/bg_button02"
         android:text="按钮2"
         android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button02"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/bg_button03"
+        android:text="按钮3"
+        android:textColor="#FFFFFF "
         android:textSize="20sp" />
 </RelativeLayout>

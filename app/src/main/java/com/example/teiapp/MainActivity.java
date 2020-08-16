@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //找到按钮
-        mBtnButton =(Button)findViewById(R.id.button01);
+        mBtnButton =(Button)findViewById(R.id.button03);
         mBtnButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
