@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:padding="15dp">
 
-
     <EditText
         android:id = "@+id/et01"
         android:layout_width="match_parent"
@@ -26,6 +25,17 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_username"
         android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et02"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_button03"
+        android:text="登录"
+        android:textColor="#FFFFFF "
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
