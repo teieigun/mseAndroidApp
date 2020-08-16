@@ -18,8 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //找到按钮
         mBtnButton =(Button)findViewById(R.id.button03);
+        //增加此按钮的监听
         mBtnButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                //由 Intent来协助完成 Android各个组件之间的通讯
                 Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
                 startActivity(intent);
             }
