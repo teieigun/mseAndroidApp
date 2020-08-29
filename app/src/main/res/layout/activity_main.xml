@@ -30,11 +30,11 @@
         android:id="@+id/button01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="按钮1"
+        android:text="用户注册"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:textColor="#FFFFFF"
-        android:background="#0051CC"
+        android:background="@drawable/bg_button01"
         />
 
     <Button
@@ -44,7 +44,7 @@
         android:layout_below="@id/button01"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_button02"
-        android:text="按钮2"
+        android:text="用户登录"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
@@ -55,7 +55,7 @@
         android:layout_below="@id/button02"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_button03"
-        android:text="按钮3"
+        android:text="随便看看"
         android:textColor="#FFFFFF "
         android:textSize="20sp" />
 </LinearLayout>
