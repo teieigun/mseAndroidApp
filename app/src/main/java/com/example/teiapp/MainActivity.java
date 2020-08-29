@@ -23,39 +23,35 @@ public class MainActivity extends AppCompatActivity {
 
         //--------------------------------------------------------------------------------------------//
         //找到按钮
-        mBtnButton =(Button)findViewById(R.id.button01);
-        //增加此按钮的监听--用此按钮测试TextView
-        mBtnButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                //由 Intent来协助完成 Android各个组件之间的通讯
-                Intent intent = new Intent(MainActivity.this, RegistUserInfoActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //--------------------------------------------------------------------------------------------//
-        mBtnButtonForEditText =(Button)findViewById(R.id.button02);
-        //增加此按钮的监听--用此按钮测试EditText
-        mBtnButtonForEditText.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                //由 Intent来协助完成 Android各个组件之间的通讯
-                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //--------------------------------------------------------------------------------------------//
-        //找到按钮
-        mBtnButton =(Button)findViewById(R.id.button03);
-        //增加此按钮的监听--用此按钮测试TextView
-        mBtnButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                //由 Intent来协助完成 Android各个组件之间的通讯
-                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
-                startActivity(intent);
-            }
-        });
+        mBtnButton = (Button) findViewById(R.id.button01);
+        mBtnButtonForEditText = (Button) findViewById(R.id.button02);
+        mRadioButton = (Button) findViewById(R.id.button03);
+        setListeners();
     }
 
+    private void setListeners(){
+        OnClick onClick = new OnClick();
+        mBtnButton.setOnClickListener(onClick);
+        mBtnButtonForEditText.setOnClickListener(onClick);
+        mRadioButton.setOnClickListener(onClick);
+    }
 
+    private class OnClick implements View.OnClickListener {
+        public void onClick(View v) {
+            Intent intent = null;
+            switch (v.getId()) {
+                case R.id.button01:
+                    intent = new Intent(MainActivity.this, RegistUserInfoActivity.class);
+                    break;
+                case R.id.button02:
+                    intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    break;
+                case R.id.button03:
+                    intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    break;
+            }
+            startActivity(intent);
+        }
+    }
 }
+

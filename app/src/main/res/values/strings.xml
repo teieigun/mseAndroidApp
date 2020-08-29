@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">teiApp</string>
     <string name="program1">Hello World!!!</string>
+    <string name="pirates">男性</string>
+    <string name="ninjas">女性</string>
+
 </resources>
