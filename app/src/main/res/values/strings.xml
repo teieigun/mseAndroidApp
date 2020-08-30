@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">teiApp</string>
     <string name="program1">Hello World!!!</string>
-    <string name="pirates">男性</string>
-    <string name="ninjas">女性</string>
+    <string name="sex1">男性</string>
+    <string name="sex2">女性</string>
+    <string name="studylevel1">高中</string>
+    <string name="studylevel2">大学</string>
+    <string name="studylevel3">研究生</string>
 
 </resources>

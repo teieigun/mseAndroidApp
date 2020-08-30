@@ -20,24 +20,106 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <RadioGroup
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/sex001"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text001"
+        android:layout_marginTop="20dp"
+        android:text="性别"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <RadioGroup
+        android:id="@+id/radio01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sex001"
+        android:layout_marginTop="2dp"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radio_pirates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/pirates" />
+            android:checked="true"
+            android:text="@string/sex1"/>
 
         <RadioButton
             android:id="@+id/radio_ninjas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/ninjas" />
+            android:checked="false"
+            android:text="@string/sex2"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/studyleve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio01"
+        android:layout_marginTop="20dp"
+        android:text="您的最高学历"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <RadioGroup
+        android:id="@+id/radio02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studyleve"
+
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <!--android:button="@null"可以使Radio button前面的圈儿〇消失 -->
+
+        <RadioButton
+            android:id="@+id/studyleve1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/studylevel1"
+            android:textColor="#190909" />
+
+        <RadioButton
+            android:id="@+id/studyleve2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/studylevel2"
+            android:textColor="#190909" />
+
+        <RadioButton
+            android:id="@+id/studyleve3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_radiobutton"
+            android:button="@null"
+            android:checked="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/studylevel3"
+            android:textColor="#190909" />
     </RadioGroup>
 </RelativeLayout>
