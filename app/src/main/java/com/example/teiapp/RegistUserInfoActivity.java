@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -21,7 +22,10 @@ public class RegistUserInfoActivity extends AppCompatActivity {
     //用Radio按钮实现最高学历的选择
     private RadioGroup mRg2;
     //用Checkbox按钮实现(您感兴趣的IT技术)的选择
-    private RadioGroup mCg1;
+    private CheckBox mCg1;
+    private CheckBox mCg2;
+    private CheckBox mCg3;
+    private CheckBox mCg4;
 
 
     @Override
@@ -48,6 +52,40 @@ public class RegistUserInfoActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, @IdRes int chechedId) {
                 RadioButton radioButton = (RadioButton)group.findViewById(chechedId);
                 Toast.makeText(RegistUserInfoActivity.this,radioButton.getText(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // 用Radio按钮实现最高学历的选择
+        mCg1 = (CheckBox) findViewById(R.id.skillCheckBox01);
+        mCg1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                Toast.makeText(RegistUserInfoActivity.this,isChecked?"Java选中":"Java未选中",Toast.LENGTH_SHORT).show();
+            }
+        });
+        mCg2 = (CheckBox) findViewById(R.id.skillCheckBox02);
+        mCg2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                Toast.makeText(RegistUserInfoActivity.this,isChecked?"Php选中":"Php未选中",Toast.LENGTH_SHORT).show();
+            }
+        });
+        mCg3 = (CheckBox) findViewById(R.id.skillCheckBox03);
+        mCg3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                Toast.makeText(RegistUserInfoActivity.this,isChecked?"Android选中":"Android未选中",Toast.LENGTH_SHORT).show();
+            }
+        });
+        mCg4 = (CheckBox) findViewById(R.id.skillCheckBox04);
+        mCg4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                Toast.makeText(RegistUserInfoActivity.this,isChecked?"IOS选中":"IOS未选中",Toast.LENGTH_SHORT).show();
             }
         });
 
