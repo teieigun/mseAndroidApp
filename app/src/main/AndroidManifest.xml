@@ -10,10 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RegistUserInfoActivity"></activity>
-        <activity android:name=".RadioButtonActivity" />
         <activity android:name=".EditTextActivity" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".ButtonActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

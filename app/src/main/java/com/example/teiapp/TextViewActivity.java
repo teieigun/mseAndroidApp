@@ -9,6 +9,6 @@ public class TextViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_view);
+        setContentView(R.layout.activity_see_view);
     }
 }
