@@ -1,10 +1,13 @@
-package com.example.teiapp;
+package com.example.teiapp.listView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 
-public class TextViewActivity extends AppCompatActivity {
+import com.example.teiapp.R;
+
+public class TextViewActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

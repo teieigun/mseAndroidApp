@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RegistUserInfoActivity"></activity>
         <activity android:name=".EditTextActivity" />
-        <activity android:name=".TextViewActivity" />
+        <activity android:name=".listView.TextViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
