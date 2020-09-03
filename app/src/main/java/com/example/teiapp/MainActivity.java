@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.teiapp.listView.TextViewActivity;
+import com.example.teiapp.listView.ListViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, EditTextActivity.class);
                     break;
                 case R.id.button03:
-                    intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);

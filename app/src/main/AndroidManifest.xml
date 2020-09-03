@@ -11,11 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RegistUserInfoActivity"></activity>
         <activity android:name=".EditTextActivity" />
-        <activity android:name=".listView.TextViewActivity" />
+        <activity android:name=".listView.ListViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
