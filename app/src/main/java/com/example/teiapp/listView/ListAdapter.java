@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.teiapp.R;
 
 public class ListAdapter extends BaseAdapter {
@@ -62,6 +63,7 @@ public class ListAdapter extends BaseAdapter {
         holder.text02.setText("郑老师");
         holder.text03.setText("观看人数：2300人");
         holder.text04.setText("发布日:2010/02/04");
+        Glide.with(mContext).load("https://i0.hdslb.com/bfs/archive/e62b6b095ef38dfb742687f11e4b570dde420b5d.png").into(holder.imageView);
 
         return view;
     }
