@@ -59,4 +59,15 @@
         android:text="随便看看"
         android:textColor="#FFFFFF "
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button03"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button03"
+        android:text="视频一览"
+        android:textColor="#FFFFFF "
+        android:textSize="20sp" />
 </LinearLayout>

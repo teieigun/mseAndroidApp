@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.teiapp.listView.GridViewActivity;
 import com.example.teiapp.listView.ListViewActivity;
 
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnButton;
     private Button mBtnButtonForEditText;
     private Button mRadioButton;
+    private Button mGridButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnButton = (Button) findViewById(R.id.button01);
         mBtnButtonForEditText = (Button) findViewById(R.id.button02);
         mRadioButton = (Button) findViewById(R.id.button03);
+        mGridButton = (Button) findViewById(R.id.button04);
         setListeners();
     }
 
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnButton.setOnClickListener(onClick);
         mBtnButtonForEditText.setOnClickListener(onClick);
         mRadioButton.setOnClickListener(onClick);
+        mGridButton.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -49,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.button03:
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.button04:
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
             }
             startActivity(intent);

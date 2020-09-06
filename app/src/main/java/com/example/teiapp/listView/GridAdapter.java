@@ -11,12 +11,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.teiapp.R;
 
-public class ListAdapter extends BaseAdapter {
+public class GridAdapter extends BaseAdapter {
 
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    public ListAdapter(Context context){
+    public GridAdapter(Context context){
         this.mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
     }
