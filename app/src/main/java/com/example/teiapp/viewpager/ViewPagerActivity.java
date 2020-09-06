@@ -1,5 +1,6 @@
 package com.example.teiapp.viewpager;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,7 @@ import com.example.teiapp.R;
 
 import java.util.ArrayList;
 
-public class ViewPagerActivity extends AppCompatActivity {
+public class ViewPagerActivity extends Activity {
 
     private ViewPager viewPager0;
     private ArrayList<View> aList;
