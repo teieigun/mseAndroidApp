@@ -47,22 +47,16 @@ public class GridAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder = null;
         if(view ==null){
-            view = mLayoutInflater.inflate(R.layout.layout_list_item,null);
+            view = mLayoutInflater.inflate(R.layout.layout_grid_item,null);
             holder = new ViewHolder();
-            holder.imageView =(ImageView)view.findViewById(R.id.adapterLv1);
-            holder.text01 =(TextView)view.findViewById(R.id.text01);
-            holder.text02 =(TextView)view.findViewById(R.id.text02);
-            holder.text03 =(TextView)view.findViewById(R.id.text03);
-            holder.text04 =(TextView)view.findViewById(R.id.text04);
+            holder.imageView =(ImageView)view.findViewById(R.id.gridViewInner01);
+            holder.text01 =(TextView)view.findViewById(R.id.gridViewInnerText01);
             view.setTag(holder);
         }else{
             holder = (ViewHolder) view.getTag();
         }
         //给控件赋值
         holder.text01.setText("手机开发");
-        holder.text02.setText("郑老师");
-        holder.text03.setText("观看人数：2300人");
-        holder.text04.setText("发布日:2010/02/04");
         Glide.with(mContext).load("https://www.google.co.jp/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png").into(holder.imageView);
 
         return view;

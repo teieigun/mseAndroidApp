@@ -13,6 +13,7 @@
         <activity android:name=".RegistUserInfoActivity"></activity>
         <activity android:name=".EditTextActivity" />
         <activity android:name=".listView.ListViewActivity" />
+        <activity android:name=".gridView.GridViewActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

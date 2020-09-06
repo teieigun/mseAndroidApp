@@ -2,6 +2,7 @@ package com.example.teiapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -12,7 +13,7 @@ import com.example.teiapp.listView.ListViewActivity;
 import com.example.teiapp.viewpager.ViewPagerActivity;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private Button mBtnButton;
     private Button mBtnButtonForEditText;
