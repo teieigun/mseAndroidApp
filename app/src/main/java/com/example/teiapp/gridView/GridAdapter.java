@@ -1,4 +1,4 @@
-package com.example.teiapp.listView;
+package com.example.teiapp.gridView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
