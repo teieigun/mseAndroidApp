@@ -74,10 +74,20 @@
         android:id="@+id/button05"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button03"
+        android:layout_below="@id/button04"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_button03"
         android:text="ViewPager例子程序"
+        android:textColor="#FFFFFF "
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button05"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button03"
+        android:text="RecylerView例子程序"
         android:textColor="#FFFFFF "
         android:textSize="20sp" />
 </LinearLayout>

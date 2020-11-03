@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.example.teiapp.gridView.GridViewActivity;
 import com.example.teiapp.listView.ListViewActivity;
+import com.example.teiapp.recyclerView.RecyclerViewActivity;
 import com.example.teiapp.viewpager.ViewPagerActivity;
 
 
@@ -20,6 +21,7 @@ public class MainActivity extends Activity {
     private Button mRadioButton;
     private Button mGridButton;
     private Button mViewPagerButton;
+    private Button mRecylerViewButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class MainActivity extends Activity {
         mRadioButton = (Button) findViewById(R.id.button03);
         mGridButton = (Button) findViewById(R.id.button04);
         mViewPagerButton = (Button) findViewById(R.id.button05);
+        mRecylerViewButton = (Button) findViewById(R.id.button06);
         setListeners();
     }
 
@@ -44,6 +47,7 @@ public class MainActivity extends Activity {
         mRadioButton.setOnClickListener(onClick);
         mGridButton.setOnClickListener(onClick);
         mViewPagerButton.setOnClickListener(onClick);
+        mRecylerViewButton.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -64,6 +68,9 @@ public class MainActivity extends Activity {
                     break;
                 case R.id.button05:
                     intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                    break;
+                case R.id.button06:
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
