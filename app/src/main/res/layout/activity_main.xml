@@ -90,4 +90,5 @@
         android:text="RecylerView例子程序"
         android:textColor="#FFFFFF "
         android:textSize="20sp" />
+
 </LinearLayout>

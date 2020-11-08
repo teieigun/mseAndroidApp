@@ -1,10 +1,8 @@
 package com.example.teiapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
@@ -12,7 +10,6 @@ import com.example.teiapp.gridView.GridViewActivity;
 import com.example.teiapp.listView.ListViewActivity;
 import com.example.teiapp.recyclerView.RecyclerViewActivity;
 import com.example.teiapp.viewpager.ViewPagerActivity;
-
 
 public class MainActivity extends Activity {
 
