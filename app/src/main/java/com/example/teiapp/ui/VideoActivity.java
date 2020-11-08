@@ -5,17 +5,23 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.MarginPageTransformer;
 
 import com.example.teiapp.R;
+import com.example.teiapp.adapter.ImageAdapter;
 import com.example.teiapp.adapter.MultipleTypesAdapter;
 import com.example.teiapp.bean.DataBean;
 import com.example.teiapp.indicator.NumIndicator;
 import com.example.teiapp.viewholder.VideoHolder;
+import com.google.android.material.snackbar.Snackbar;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 import com.youth.banner.Banner;
 import com.youth.banner.config.IndicatorConfig;
+import com.youth.banner.indicator.CircleIndicator;
 import com.youth.banner.listener.OnPageChangeListener;
+import com.youth.banner.util.BannerUtils;
+import com.youth.banner.util.LogUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,6 +41,16 @@ public class VideoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
         ButterKnife.bind(this);
+
+        ImageAdapter adapter = new ImageAdapter(DataBean.getTestData2());
+        banner.setAdapter(adapter)
+                .addBannerLifecycleObserver(this)//添加生命周期观察者
+                .setIndicator(new CircleIndicator(this))//设置指示器
+                .setOnBannerListener((data, position) -> {
+                    Snackbar.make(banner, ((DataBean) data).title, Snackbar.LENGTH_SHORT).show();
+                    LogUtils.d("position：" + position);
+                });
+        banner.addPageTransformer(new MarginPageTransformer((int) BannerUtils.dp2px(10)));
 
         banner.addBannerLifecycleObserver(this)
                 .setAdapter(new MultipleTypesAdapter(this, DataBean.getTestDataVideo()))
@@ -67,6 +83,7 @@ public class VideoActivity extends AppCompatActivity {
 
                     }
                 });
+
     }
 
     @Override
