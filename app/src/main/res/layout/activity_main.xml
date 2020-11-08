@@ -1,94 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-<!--
-   Button 继承了textView以此可以点击，几乎任何组件都继承了TextView，所有几乎所有的组件都具有点击事件
-
-
-    <Button
-
-        android:id="@+id/button01"
-        android:layout_height="50dp"
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:text="TextView"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button02"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:text="Button"
-        />
--->
+    <!--
+       Button 继承了textView以此可以点击，几乎任何组件都继承了TextView，所有几乎所有的组件都具有点击事件
 
-    <Button
-        android:id="@+id/button01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="用户注册"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/bg_button01"
-        />
 
-    <Button
-        android:id="@+id/button02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button01"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_button02"
-        android:text="用户登录"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        <Button
 
-    <Button
-        android:id="@+id/button03"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button02"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_button03"
-        android:text="随便看看"
-        android:textColor="#FFFFFF "
-        android:textSize="20sp" />
+            android:id="@+id/button01"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="TextView"
+            />
 
-    <Button
-        android:id="@+id/button04"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button03"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_button03"
-        android:text="视频一览"
-        android:textColor="#FFFFFF "
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/button05"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button04"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_button03"
-        android:text="ViewPager例子程序"
-        android:textColor="#FFFFFF "
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/button06"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button05"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_button03"
-        android:text="RecylerView例子程序"
-        android:textColor="#FFFFFF "
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/button02"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="Button"
+            />
+    -->
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button01"
+            />
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button01"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button02"
+            android:text="用户登录"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button02"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button03"
+            android:text="随便看看"
+            android:textColor="#FFFFFF "
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button03"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button03"
+            android:text="视频一览"
+            android:textColor="#FFFFFF "
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/button05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button04"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button03"
+            android:text="ViewPager例子程序"
+            android:textColor="#FFFFFF "
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/button06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button05"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button03"
+            android:text="RecylerView例子程序"
+            android:textColor="#FFFFFF "
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
